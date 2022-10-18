@@ -11,13 +11,13 @@ Wellcome to Project
 ## ⚔ Game Development
 | <p align="center">SW_Dev | <p align="center">SW_Dev |
 | :-------------:  | :-------------: |
-| <p align="center"><img width="30%" height="40%" src="./Profile-63015049.png" /> | <p align="center"><img width="30%" height="40%" src="./Profile-63015098.png" /> |
+| <p align="center"><img width="30%" height="40%" src="./Picture/Profile-63015049.png" /> | <p align="center"><img width="30%" height="40%" src="./Picture/Profile-63015098.png" /> |
 | <p align="center" width="100%">ID : 63015049 | <p align="center" width="100%">ID : 63015098 |
 | <p align="center" width="100%">Nattaphon Suksomroop | <p align="center" width="100%">Nanthikan Praesirirak |
 ---
 - เอกสาร[https://docs.google.com/document/d/1H2Tz_DtjQgtkodTyemRY0wpbEnI2H6JLbBX9XOcYiDs/edit]  
 ## Use case
-<img width="100%" height="auto" src="./Usecase.png" />
+<img width="100%" height="auto" src="./Picture/Usecase.png" />
 
 ## Table
 ---

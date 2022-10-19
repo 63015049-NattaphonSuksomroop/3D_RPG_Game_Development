@@ -38,6 +38,7 @@ public class CharacterMovement : MonoBehaviour
         Time.timeScale = 1;
         animator = GetComponent<Animator>();
         characterController = GetComponent<CharacterController>();
+        Debug.Log(animator + "Start Running");
     }
 
     // Update is called once per frame
@@ -89,6 +90,12 @@ public class CharacterMovement : MonoBehaviour
         }
         characterController.Move(moveDirection * Time.deltaTime);
         UpdateMovement();
+        Debug.Log(animator + "Update Running");
+        Debug.Log(moveDirection + "moveDirection");
+        Debug.Log(speed + "speed");
+        Debug.Log(ySpeed + "ySpeed");
+        Debug.Log(jumpSpeed + "jumpSpeed");
+
     }
 
     void UpdateMovement()
@@ -97,6 +104,7 @@ public class CharacterMovement : MonoBehaviour
         motion *= (Mathf.Abs(inputVec.x) == 1 && Mathf.Abs(inputVec.z) == 1) ? .7f : 1 ;
         RotateTowardMovementDirection();
         getCameraRealtive();
+        Debug.Log(inputVec + "UpdateMovement");
     }
 
     void RotateTowardMovementDirection()

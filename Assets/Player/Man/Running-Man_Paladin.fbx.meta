@@ -1,32 +1,12 @@
 fileFormatVersion: 2
-guid: 6927e7da1d4908a4ba7288628dbf3348
+guid: 743bdbdc1a3b2444688d53304ced1081
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable:
   - first:
       74: -203655887218126122
     second: mixamo.com
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Paladin_MAT
-    second: {fileID: 2100000, guid: bf45224cc95da8d4c98ed16062b169a6, type: 2}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Paladin_diffuse
-    second: {fileID: 2800000, guid: b2a888812c397d34a9bd9a66a2c5f5d2, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Paladin_normal
-    second: {fileID: 2800000, guid: c83e3c48b39784245b51a46523ef9cdf, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Paladin_specular
-    second: {fileID: 2800000, guid: b30fabb00205ba34aa098b37cb2d1372, type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -6,6 +6,7 @@ using TMPro;
 public class FPS_Display : MonoBehaviour
 
 {
+    //FPS_Display
     public TextMeshProUGUI FpsText;
     public float pollingTime = 1f;
     private float time;
@@ -14,6 +15,7 @@ public class FPS_Display : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //FPS_Display
         time += Time.deltaTime;
 
         frameCount++;
@@ -25,7 +27,7 @@ public class FPS_Display : MonoBehaviour
 
             time -= pollingTime;
             frameCount = 0;
+            Debug.Log(FpsText + "Fps");
         }
-        Debug.Log(FpsText + "Fps");
     }
 }

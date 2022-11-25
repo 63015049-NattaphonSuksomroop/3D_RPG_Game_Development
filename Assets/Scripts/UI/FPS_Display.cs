@@ -27,7 +27,7 @@ public class FPS_Display : MonoBehaviour
 
             time -= pollingTime;
             frameCount = 0;
-            Debug.Log(FpsText + "Fps");
+            Debug.Log(frameRate + " Fps");
         }
     }
 }

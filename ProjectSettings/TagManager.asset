@@ -5,6 +5,16 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - wall
+  - ground
+  - key
+  - agent
+  - portal
+  - dragon
+  - lock
+  - Dragon
+  - CinemachineTarget
+  - Arrow
   layers:
   - Default
   - TransparentFX

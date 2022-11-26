@@ -1,24 +1,28 @@
 using UnityEngine;
 
-public class Arrow : MonoBehaviour
+namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
 {
-    public int damageAmount = 15;
-
-    private void Start()
+    public class Arrow : Player
     {
-        Destroy(gameObject, 10);
-    }
+        public int damageAmount = 15;
 
-    private void OnTriggerEnter(Collider other)
-    {
-        Destroy(transform.GetComponent<Rigidbody>());
-        Destroy(transform.GetComponent<Collider>());
-        transform.parent = other.transform;
-        
-        if (other.tag == "Dragon")
+        private void Start()
         {
-            other.GetComponent<Dragon>().TakeDamage(damageAmount);
+            Destroy(gameObject, 10);
         }
-        Destroy(gameObject, 1);
+
+        private void OnTriggerEnter(Collider other)
+        {
+            Destroy(transform.GetComponent<Rigidbody>());
+            Destroy(transform.GetComponent<Collider>());
+            transform.parent = other.transform;
+
+            if (other.tag == "Dragon")
+            {
+                other.GetComponent<Dragon>().TakeDamage(damageAmount);
+            }
+            Destroy(gameObject, 1);
+        }
     }
+
 }

@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
 {
-	public class StarterAssetsInputs : MonoBehaviour
+	public class StarterAssetsInputs : Player
 	{
 		[Header("Character Input Values")]
 		public Vector2 move;
@@ -103,5 +103,5 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
 #endif
 
 	}
-	
 }
+

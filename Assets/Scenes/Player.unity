@@ -12992,7 +12992,7 @@ GameObject:
   - component: {fileID: 135756641613574975}
   - component: {fileID: 4416926083347132239}
   m_Layer: 8
-  m_Name: rcher With Bow Arroww Arrow
+  m_Name: Woman_Archer With Bow Arrow
   m_TagString: Player
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0

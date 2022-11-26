@@ -4,13 +4,13 @@ using UnityEngine;
 
 namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
 {
-    public class CharacterMovement : MonoBehaviour
+    public class CharacterMovement : Player
     {
         [SerializeField]
         private float rotationSpeed;
 
-        [SerializeField]
-        private float JumpHeight;
+        //[SerializeField]
+        //private float JumpHeight;
 
         [SerializeField]
         private float gravityMultiplier;
@@ -49,7 +49,7 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
         {
             MainCameraTransform = Camera.main.transform;
         }
-        void Start()
+        private void Start()
         {
             Time.timeScale = 1;
             animator = GetComponent<Animator>();
@@ -73,13 +73,13 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
             }
         }
         */
-        void HandArrowActive()
+        private void HandArrowActive()
         {
             HandArrow.gameObject.SetActive(true);
         }
         // Update is called once per frame
         public LayerMask hitLayers;
-        void Update()
+        private void Update()
         {
             //Check A* กับ Enemy to Player โดยค้นหา Shotest Path จาก Pathfinding.cs
             if (Input.GetMouseButtonDown(0))//คลิกตัวผู้เล่นเเละเคลื่อยย้ายจากจุดเพื่อทดสอบตำแหน่ง Enemy to Player
@@ -157,7 +157,7 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
 
         }
 
-        void UpdateMovement()
+        private void UpdateMovement()
         {
             Vector3 motion = inputVec;
             motion *= (Mathf.Abs(inputVec.x) == 1 && Mathf.Abs(inputVec.z) == 1) ? .7f : 1;
@@ -166,14 +166,14 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
             Debug.Log(inputVec + "UpdateMovement");
         }
 
-        void RotateTowardMovementDirection()
+        private void RotateTowardMovementDirection()
         {
             if (inputVec != Vector3.zero)
             {
                 transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(targetDiriction), Time.deltaTime * roatationSpeed);
             }
         }
-        void getCameraRealtive()
+        private void getCameraRealtive()
         {
             Transform cameraTransform = Camera.main.transform; //เคลื่อนที่ไปทางไหนทิศทางจะตามด้วย
             Vector3 forward = cameraTransform.TransformDirection(Vector3.forward);

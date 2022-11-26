@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
 {
-	public class ThirdPersonController : MonoBehaviour
+	public class ThirdPersonController : Player
 	{
 		[Header("Player")]
 		[Tooltip("Move speed of the character in m/s")]

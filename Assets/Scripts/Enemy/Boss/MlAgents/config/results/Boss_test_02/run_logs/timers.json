@@ -1,0 +1,42 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1677131952",
+        "python_version": "3.8.13 (default, Oct 19 2022, 22:38:03) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\beeer\\anaconda3\\envs\\mlagents_R19\\Scripts\\mlagents-learn BossBattle.yaml --run-id=Boss_test_02",
+        "mlagents_version": "0.28.0",
+        "mlagents_envs_version": "0.28.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.13.0+cu117",
+        "numpy_version": "1.23.4",
+        "end_time_seconds": "1677131959"
+    },
+    "total": 7.065468000000001,
+    "count": 1,
+    "self": 0.008998000000001838,
+    "children": {
+        "run_training.setup": {
+            "total": 0.09650179999999997,
+            "count": 1,
+            "self": 0.09650179999999997
+        },
+        "TrainerController.start_learning": {
+            "total": 6.9599682,
+            "count": 1,
+            "self": 0.0001197999999993371,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 6.9598338,
+                    "count": 1,
+                    "self": 6.9598338
+                },
+                "TrainerController._save_models": {
+                    "total": 1.4600000000086766e-05,
+                    "count": 1,
+                    "self": 1.4600000000086766e-05
+                }
+            }
+        }
+    }
+}

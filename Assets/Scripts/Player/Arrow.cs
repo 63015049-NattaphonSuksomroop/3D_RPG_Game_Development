@@ -4,7 +4,7 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
 {
     public class Arrow : Player
     {
-        public int damageAmount = 15;
+        public int damageAmount = 100;
 
         private void Start()
         {

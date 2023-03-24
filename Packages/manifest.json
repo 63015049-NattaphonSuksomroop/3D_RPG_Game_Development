@@ -10,6 +10,7 @@
     "com.unity.ml-agents": "file:C:/Users/beeer/Documents/mlagents_R19/ml-agents-release_19/com.unity.ml-agents",
     "com.unity.ml-agents.extensions": "file:C:/Users/beeer/Documents/mlagents_R19/ml-agents-release_19/com.unity.ml-agents.extensions",
     "com.unity.probuilder": "5.0.6",
+    "com.unity.render-pipelines.universal": "file:../Assets/RL-Boss/Packages/Urp_BugFix/com.unity.render-pipelines.universal",
     "com.unity.test-framework": "1.1.31",
     "com.unity.textmeshpro": "3.0.6",
     "com.unity.timeline": "1.6.4",

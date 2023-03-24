@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1e0a7cdf671b7b46aa4a5d2281f2571, type: 3}
+  m_Name: CharacterVfxSO
+  m_EditorClassIdentifier: 
+  _fireHandVfxPrefab: {fileID: 6875524855353016708, guid: ae10b6b7fc725364da74cae0d5e0c61e,
+    type: 3}
+  _woodVfxPrefab: {fileID: 0}
+  _stoneVfxPrefab: {fileID: 0}
+  _dirtVfxPrefab: {fileID: 0}
+  _metalVfxPrefab: {fileID: 0}

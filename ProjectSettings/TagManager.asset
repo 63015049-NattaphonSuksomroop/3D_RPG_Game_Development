@@ -4,25 +4,27 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Enemy
-  - wall
-  - ground
-  - key
-  - agent
-  - portal
-  - dragon
-  - lock
-  - Dragon
-  - CinemachineTarget
-  - Arrow
+  - Hittable
+  - Collide
+  - Walkable
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Wall
+  - 
   - Water
   - UI
-  - Environment
+  - 
+  - 
+  - PostProcessing
+  - InWorldUi
+  - Enviroment
+  - Hittable
+  - 
+  - InventoryImage
+  - Trigger
+  - 
+  - Grass
   - 
   - 
   - 
@@ -37,17 +39,7 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player_Geo
   m_SortingLayers:
   - name: Default
     uniqueID: 0

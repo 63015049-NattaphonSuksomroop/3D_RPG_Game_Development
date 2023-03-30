@@ -6,8 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/#DevSummit2022/Scenes/Level_DevSummit2022.unity
-    guid: 6c235d634cadb3c48b330472036c0c4a
+    path: Assets/Scenes/Scenes/Easy.unity
+    guid: 36752f0cf171d204fbd966048e0f1d36
+  - enabled: 1
+    path: Assets/Scenes/Scenes/Normal.unity
+    guid: 82179b05662897b4bb99598f0c9a7228
+  - enabled: 1
+    path: Assets/Scenes/Scenes/Hard.unity
+    guid: fb1a6bce4e11efc4286b1352f0bbf06e
+  - enabled: 0
+    path: Assets/Scenes/Scenes/B1.unity
+    guid: c975b31dad08ff84b9b0a7996b850344
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000,
       guid: 37da817ffd8f36c41966f18ed2bf322b, type: 2}
@@ -17,5 +26,5 @@ EditorBuildSettings:
       guid: 24c1d771fc082e445a7d3423f493ef79, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
       guid: 5b4a8890aa41a3a48838c3f4609e5ca9, type: 2}
-    com.unity.input.settings: {fileID: 11400000, guid: df188d3586e450d40a4ae2b611c7bd3b,
+    com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7,
       type: 2}

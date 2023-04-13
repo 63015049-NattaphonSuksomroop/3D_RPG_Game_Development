@@ -4,7 +4,7 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
 {
     public class Arrow : MonoBehaviour
     {
-        public int damageAmount = 15;
+        public int damageAmount = 35;
 
         private void Start()
         {
@@ -20,8 +20,10 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
             if (other.tag == "Dragon")
             {
                 other.GetComponent<Dragon>().TakeDamage(damageAmount);
+                other.GetComponent<Skeleton>().TakeDamage(damageAmount);
             }
             Destroy(gameObject, 1);
+
         }
     }
 

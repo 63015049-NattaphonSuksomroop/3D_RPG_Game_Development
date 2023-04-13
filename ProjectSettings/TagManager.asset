@@ -8,11 +8,16 @@ TagManager:
   - Collide
   - Walkable
   - CinemachineTarget
+  - Dragon
+  - WayPoints
+  - Enemy
+  - EnemyWeapon
+  - Weapon
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Wall
   - Water
   - UI
   - Minimap

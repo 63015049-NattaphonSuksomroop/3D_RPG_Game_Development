@@ -1,42 +1,13 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.UI;
 
-public class Dragon : MonoBehaviour
+namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
 {
-    private int HP = 100;
-    public Slider healthBar;
-    
-    public Animator animator;
-    
-    void Update(){
-    	healthBar.value = HP;
-    }
-    
-
-    public void Scream()
+    public class Dragon : Enemy
     {
-        FindObjectOfType<AudioManager>().Play("DragonScream");
-    }
 
-    public void Attack()
-    {
-        FindObjectOfType<AudioManager>().Play("DragonAttack");
     }
-
-    public void TakeDamage(int damageAmount)
-    {
-        HP -= damageAmount;
-        if(HP <= 0)
-        {
-            animator.SetTrigger("die");
-            GetComponent<Collider>().enabled = false;
-            FindObjectOfType<AudioManager>().Play("DragonDeath");
-        }
-        else
-        {
-            FindObjectOfType<AudioManager>().Play("DragonDamage");
-            animator.SetTrigger("damage");
-        }
-    }
-
 }

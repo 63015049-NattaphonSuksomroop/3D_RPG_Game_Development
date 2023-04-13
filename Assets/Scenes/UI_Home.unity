@@ -867,8 +867,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: RPGGameDevelopment.KMITL.CE.ProjectFourth.PlayGame,
+      - m_Target: {fileID: 1367553940}
+        m_TargetAssemblyTypeName: RPGGameDevelopment.KMITL.CE.ProjectFourth.GamePlay,
           Assembly-CSharp
         m_MethodName: PlayGamemode
         m_Mode: 1

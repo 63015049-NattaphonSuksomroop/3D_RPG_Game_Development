@@ -20,7 +20,6 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
             if (other.tag == "Dragon")
             {
                 other.GetComponent<Dragon>().TakeDamage(damageAmount);
-                other.GetComponent<Skeleton>().TakeDamage(damageAmount);
             }
             Destroy(gameObject, 1);
 

@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 63945593c23119948b6bbd14ae3d5f14, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 6a417d51f4ae0174b89d2c1f0042bc0a, type: 2}
 --- !u!1 &342785626
 GameObject:
   m_ObjectHideFlags: 0
@@ -414,7 +414,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 34d513672558fe0478dd3a29e7f55db4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -710,7 +710,7 @@ PrefabInstance:
     - target: {fileID: 2739677295040949512, guid: ba41c7fa507c77246978607fde0c24e5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.17
       objectReference: {fileID: 0}
     - target: {fileID: 2739677295040949512, guid: ba41c7fa507c77246978607fde0c24e5,
         type: 3}
@@ -783,6 +783,21 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 416692004493661081}
+    - target: {fileID: 2739677295799693394, guid: ba41c7fa507c77246978607fde0c24e5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -6.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739677295799693394, guid: ba41c7fa507c77246978607fde0c24e5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739677295799693394, guid: ba41c7fa507c77246978607fde0c24e5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.8799973
+      objectReference: {fileID: 0}
     - target: {fileID: 2739677296002421897, guid: ba41c7fa507c77246978607fde0c24e5,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -1251,6 +1266,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 649390676687757455, guid: b395889dceb40af43911f4b7a714be4b,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -6.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 649390676687757455, guid: b395889dceb40af43911f4b7a714be4b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 649390676687757455, guid: b395889dceb40af43911f4b7a714be4b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.82
       objectReference: {fileID: 0}
     - target: {fileID: 649390676916196587, guid: b395889dceb40af43911f4b7a714be4b,
         type: 3}

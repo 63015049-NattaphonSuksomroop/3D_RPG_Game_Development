@@ -35,6 +35,7 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
                 Level++;
                 TargetXp += 2000;
             }
+            ExperienceText.text = CurrentXp + "/" + TargetXp;
         }
 
     }

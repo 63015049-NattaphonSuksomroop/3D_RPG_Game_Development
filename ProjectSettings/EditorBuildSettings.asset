@@ -9,10 +9,13 @@ EditorBuildSettings:
     path: Assets/Scenes/Map-Test/UI_Home.unity
     guid: 30b6a6eb3a7a5564c823eac17e614820
   - enabled: 1
+    path: Assets/Scenes/Map-Test/UI_Mode.unity
+    guid: f80848b5bd85e254595d9801e7b7d59d
+  - enabled: 1
     path: Assets/Scenes/Map-Test/Easy-Map.unity
     guid: 6c650eae3bffbb24a96affa743a249c9
   - enabled: 1
-    path: Assets/Scenes/Map-Test/Normal-Map.unity
+    path: Assets/Scenes/Map-Test/Medium-Map.unity
     guid: 55c5238ae9fd8f445b0a91cc015e6976
   - enabled: 1
     path: Assets/Scenes/Map-Test/Hard-Map.unity

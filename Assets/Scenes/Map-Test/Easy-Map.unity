@@ -548,7 +548,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1217594046}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.000286, y: -0.91253626, z: 28.363504}
+  m_LocalPosition: {x: -85.7, y: -0.91253626, z: 56.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1017,7 +1017,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1870746183}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 140.50029, y: -0.92153627, z: 131.2635}
+  m_LocalPosition: {x: 79, y: -0.92153627, z: 150.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1196,7 +1196,7 @@ PrefabInstance:
     - target: {fileID: 3145823483712123908, guid: 8224893ebebcd1d4496da6312dd2ef0d,
         type: 3}
       propertyPath: HP
-      value: 1
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3145823485364067045, guid: 8224893ebebcd1d4496da6312dd2ef0d,
         type: 3}
@@ -1429,7 +1429,7 @@ PrefabInstance:
     - target: {fileID: 8805410595845788446, guid: bd1cb790746c3ef4ca6d1e3b621fe934,
         type: 3}
       propertyPath: HP
-      value: 1
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8805410595845788447, guid: bd1cb790746c3ef4ca6d1e3b621fe934,
         type: 3}
@@ -1540,6 +1540,12 @@ PrefabInstance:
       propertyPath: m_Text
       value: Score = 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8476373601562715145, guid: 56254258a30133f45824d4df879aa2a7,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 97672a0ade7689e46bd81c2e304cafaf,
+        type: 3}
     - target: {fileID: 8476373601562715145, guid: 56254258a30133f45824d4df879aa2a7,
         type: 3}
       propertyPath: m_FontData.m_FontSize
@@ -1684,6 +1690,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -0.053492
+      objectReference: {fileID: 0}
+    - target: {fileID: 8476373602592264026, guid: 56254258a30133f45824d4df879aa2a7,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8476373602592264026, guid: 56254258a30133f45824d4df879aa2a7,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8476373602656606548, guid: 56254258a30133f45824d4df879aa2a7,
         type: 3}

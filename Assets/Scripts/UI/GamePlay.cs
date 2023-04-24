@@ -9,7 +9,7 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
     {
         public void PlayGamemode()
         {
-            SceneManager.LoadScene("Easy-Map");
+            SceneManager.LoadScene("UI_Mode");
         }
         private void Update()
         {

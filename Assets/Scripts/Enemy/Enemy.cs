@@ -17,7 +17,8 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
         public Slider healthBar;
 
         public Animator animator;
-
+        public Transform Player;
+        public Transform Key;
         public GameObject Enemy_Skeleton;
         public GameObject Enemy_Dragon;
         bool isKill = false;
@@ -79,6 +80,20 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
             {
                 animator.SetBool("isAttacking", false);
             }
+            /*
+            if (Vector3.Distance(transform.position, Player.position) < 6)
+            {
+                if (Input.GetKeyDown("f"))
+                {
+                    Inventory.Refrence.KilledEnemys += 1;
+                    if (Key)
+                    {
+                        KeyCode.gameObject.SetActiveRecursively(true);
+                    }
+                    Destroy(gameObject);
+                }
+            }
+            */
 
         }
         public void Scream()

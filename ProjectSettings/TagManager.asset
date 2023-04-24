@@ -15,6 +15,7 @@ TagManager:
   - Weapon
   - Score
   - lv
+  - Key
   layers:
   - Default
   - TransparentFX

@@ -13,6 +13,8 @@ TagManager:
   - Enemy
   - EnemyWeapon
   - Weapon
+  - Score
+  - lv
   layers:
   - Default
   - TransparentFX

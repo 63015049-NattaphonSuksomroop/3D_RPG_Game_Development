@@ -17,6 +17,7 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
             {
                 Application.Quit();
                 Debug.Log("ออกจากเกม");
+                
             }
         }
     }

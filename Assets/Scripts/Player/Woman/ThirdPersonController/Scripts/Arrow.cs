@@ -6,6 +6,7 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
     {
         public int damageAmount = 35;
 
+
         private void Start()
         {
             Destroy(gameObject, 10);
@@ -21,6 +22,13 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
             {
                 other.GetComponent<Dragon>().TakeDamage(damageAmount);
             }
+            /*
+            if (other.gameObject.CompareTag("GameController"))
+            {
+                other.gameObject.GetComponent<GameManager>().ExpLv();
+                Destroy(gameObject);
+            }*/
+
             Destroy(gameObject, 1);
 
         }

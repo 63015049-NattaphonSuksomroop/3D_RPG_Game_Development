@@ -11,13 +11,27 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
         Transform target;
         NavMeshAgent nav;
         GameManager manager;
+        xpContoller controller;
         public int HP = 100;
+        [SerializeReference] public float CurrentXp;
         public Slider healthBar;
 
         public Animator animator;
 
         public GameObject Enemy_Skeleton;
         public GameObject Enemy_Dragon;
+        bool isKill = false;
+
+      /*  public Enemy(GameManager gm) {
+            this.manager = gm;
+        }
+
+        public void setGameManager(GameManager gm)
+        {
+            this.manager = gm;
+        }*/
+
+
         void Start()
         {
             if (target == null)
@@ -29,15 +43,34 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
                 GameObject temp = GameObject.FindGameObjectWithTag("GameController") as GameObject;
                 manager = temp.GetComponent<GameManager>();
             }
+            if (controller == null)
+            {
+                GameObject temp = GameObject.FindGameObjectWithTag("lv") as GameObject;
+                controller = temp.GetComponent<xpContoller>();
+            }
             nav = GetComponent<NavMeshAgent>();
             animator = GetComponent<Animator>();
             Skeleton1();
             Dragon1();
+            isKill = false;
         }
         void Update()
         {
+
+
             healthBar.value = HP;
             nav.destination = target.position;
+
+
+            if (isKill)
+            {
+                /*           manager.show();
+                             manager.getExp();*/
+                isKill = false;
+                controller.getExp();
+                controller.ExperienceController();
+            }
+
             if (nav.remainingDistance <= nav.stoppingDistance)
             {
                 animator.SetBool("isAttacking", true);
@@ -46,6 +79,7 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
             {
                 animator.SetBool("isAttacking", false);
             }
+
         }
         public void Scream()
         {
@@ -80,18 +114,27 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
         public void TakeDamage(int damageAmount)
         {
             HP -= damageAmount;
+            //int i = Input.GetKeyDown("k");
             if (HP <= 0)
             {
+                isKill = true;
                 GetComponent<Collider>().enabled = false;
                 animator.SetTrigger("die");
                 manager.killEnemy();
+                manager.ExpLv();
+
+                
+                manager.getExp();
+                //transform.gameObject.GetComponent<CurrentXp>();
                 StartCoroutine(removeEnemy());
+                Debug.Log("Kill Enemy");
             }
             else
             {
                 animator.SetTrigger("damage");
             }
         }
+        
         IEnumerator removeEnemy()
         {
             yield return new WaitForSeconds(2f);

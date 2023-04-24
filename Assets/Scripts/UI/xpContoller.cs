@@ -6,25 +6,24 @@ using UnityEngine.UI;
 
 namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
 {
-    public class xpContoller : Enemy
+    public class xpContoller : GameManager
     {
-        [SerializeReference] public TextMeshProUGUI LevelText;
-        [SerializeReference] public TextMeshProUGUI ExperienceText;
-        [SerializeReference] private int Level;
-        [SerializeReference] public float CurrentXp;
-        [SerializeReference] public float TargetXp;
-        [SerializeReference] private Image XpProgresBar;
-        
+
+        GameManager manager;
+
         // Update is called once per frame
         void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                CurrentXp += 12;
-            }
-            ExperienceText.text = CurrentXp + "/" + TargetXp;
+
+            //ExperienceText.text = CurrentXp + "/" + TargetXp.ToString();
+            //int i = score;
+            //if (Input.GetKeyDown(KeyCode.Space))
+            //if (i >= 1)
+
             ExperienceController();
+            ExpLv();
         }
+
         public void ExperienceController()
         {
             LevelText.text = "Lv. " + Level.ToString();
@@ -37,5 +36,6 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
                 TargetXp += 2000;
             }
         }
+
     }
 }

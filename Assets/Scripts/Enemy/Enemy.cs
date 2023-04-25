@@ -23,6 +23,8 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
         public GameObject Enemy_Dragon;
         bool isKill = false;
 
+
+        public static bool checkAttack = false;
       /*  public Enemy(GameManager gm) {
             this.manager = gm;
         }
@@ -58,10 +60,8 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
         void Update()
         {
 
-
             healthBar.value = HP;
             nav.destination = target.position;
-
 
             if (isKill)
             {
@@ -154,6 +154,11 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
         {
             yield return new WaitForSeconds(2f);
             Destroy(gameObject);
+        }
+
+        public void BeginAttack()
+        {
+            checkAttack = true;
         }
     }
 }

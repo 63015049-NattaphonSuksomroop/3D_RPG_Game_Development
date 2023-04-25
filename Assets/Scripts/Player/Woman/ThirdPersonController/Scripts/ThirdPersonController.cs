@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 using UnityEngine.InputSystem;
 #endif
@@ -55,6 +56,9 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
 		public float CameraAngleOverride = 0.0f;
 		[Tooltip("For locking the camera position on all axis")]
 		public bool LockCameraPosition = false;
+		//health
+		public int healthPlayer = 100;
+		public Slider slider;
 
 		// cinemachine
 		private float _cinemachineTargetYaw;
@@ -339,5 +343,15 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
 			// when selected, draw a gizmo in the position of, and matching radius of, the grounded collider
 			Gizmos.DrawSphere(new Vector3(transform.position.x, transform.position.y - GroundedOffset, transform.position.z), GroundedRadius);
 		}
-	}
+        public void OnTriggerEnter(Collider other)
+        {
+            if(other.gameObject.tag == "EnemyWeapon" && Enemy.checkAttack)
+            {
+				healthPlayer -= 10;
+				slider.value = healthPlayer;
+				Enemy.checkAttack = false;
+				Debug.Log(healthPlayer + "DamageEnemy");
+            }
+        }
+    }
 }

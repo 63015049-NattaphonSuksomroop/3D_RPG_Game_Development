@@ -22,6 +22,7 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
             {
                 other.GetComponent<Dragon>().TakeDamage(damageAmount);
             }
+            
             /*
             if (other.gameObject.CompareTag("GameController"))
             {

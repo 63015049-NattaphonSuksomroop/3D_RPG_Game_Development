@@ -20,9 +20,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Map-Test/Hard-Map.unity
     guid: 4a067bc1a43db774582af54273401e2d
-  - enabled: 1
-    path: Assets/Scenes/Map-Boss/Map-Boss.unity
-    guid: eeb2844a52031ef4d8d29e19a242b27e
+  - enabled: 0
+    path: Assets/Scenes/Map-Boss/Boss-TestPlayer.unity
+    guid: 303aef13af652a84d99fb7fbcb98bccd
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000,
       guid: 37da817ffd8f36c41966f18ed2bf322b, type: 2}

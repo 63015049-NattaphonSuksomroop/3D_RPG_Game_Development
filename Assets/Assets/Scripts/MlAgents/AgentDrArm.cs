@@ -55,6 +55,8 @@ public class AgentDrArm : Agent
         else
 		{
             _enemyManager = this.transform.parent.transform.Find("ML-Player").GetComponent<MlPlayerManager>();
+            _enemyManager = this.transform.parent.transform.Find("Player_Woman").GetComponent<MlPlayerManager>();
+            
             selfFire = envController.npcFire;
             enemyFire = envController.playerFire;
         }

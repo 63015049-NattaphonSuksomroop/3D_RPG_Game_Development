@@ -16,6 +16,7 @@ TagManager:
   - Score
   - lv
   - Key
+  - EnemyAttack
   layers:
   - Default
   - TransparentFX

@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 using UnityEngine.InputSystem;
 #endif
@@ -10,7 +9,7 @@ using UnityEngine.InputSystem;
 namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
 {
 
-	public class ThirdPersonController : MonoBehaviour
+	public class ThirdPersonController : Player
 	{
 		[Header("Player")]
 		[Tooltip("Move speed of the character in m/s")]
@@ -57,8 +56,8 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
 		[Tooltip("For locking the camera position on all axis")]
 		public bool LockCameraPosition = false;
 		//health
-		public int healthPlayer = 100;
-		public Slider slider;
+		//public int healthPlayer = 100;
+		//public Slider slider;
 
 		// cinemachine
 		private float _cinemachineTargetYaw;
@@ -343,6 +342,7 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
 			// when selected, draw a gizmo in the position of, and matching radius of, the grounded collider
 			Gizmos.DrawSphere(new Vector3(transform.position.x, transform.position.y - GroundedOffset, transform.position.z), GroundedRadius);
 		}
+		/*
         public void OnTriggerEnter(Collider other)
         {
             if(other.gameObject.tag == "EnemyWeapon" && Enemy.checkAttack)
@@ -352,6 +352,14 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
 				Enemy.checkAttack = false;
 				Debug.Log(healthPlayer + "DamageEnemy");
             }
-        }
+			if (other.gameObject.tag == "EnemyAttack")
+			{
+				healthPlayer -= 5;
+				slider.value = healthPlayer;
+				Enemy.checkAttack1 = false;
+				Debug.Log(healthPlayer + "DamageEnemy1");
+			}
+		}
+		*/
     }
 }

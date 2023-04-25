@@ -25,14 +25,15 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
 
 
         public static bool checkAttack = false;
-      /*  public Enemy(GameManager gm) {
-            this.manager = gm;
-        }
+        public static bool checkAttack1 = false;
+        /*  public Enemy(GameManager gm) {
+              this.manager = gm;
+          }
 
-        public void setGameManager(GameManager gm)
-        {
-            this.manager = gm;
-        }*/
+          public void setGameManager(GameManager gm)
+          {
+              this.manager = gm;
+          }*/
 
 
         void Start()
@@ -159,6 +160,7 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
         public void BeginAttack()
         {
             checkAttack = true;
+            checkAttack1 = true;
         }
     }
 }

@@ -7,7 +7,7 @@ public class RandomEnemy : MonoBehaviour
     public GameObject theEnemy;
     public int xPos;
     public int zPos;
-    public int enemyCount;
+    public int enemyCount = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +16,7 @@ public class RandomEnemy : MonoBehaviour
     }
     IEnumerator EnemyDrop()
     {
-        while (enemyCount < 10)
+        while (enemyCount < 5)
         {
             xPos = Random.Range(1, 15);
             zPos = Random.Range(1, 33);
@@ -27,7 +27,7 @@ public class RandomEnemy : MonoBehaviour
     }
     IEnumerator EnemyDrop1()
     {
-        while (enemyCount < 10)
+        while (enemyCount < 5)
         {
             xPos = Random.Range(1, 150);
             zPos = Random.Range(1, 136);

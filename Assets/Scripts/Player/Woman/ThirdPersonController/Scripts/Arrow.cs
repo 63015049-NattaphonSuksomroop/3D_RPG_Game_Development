@@ -6,7 +6,6 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
     {
         public int damageAmount = 35;
 
-
         private void Start()
         {
             Destroy(gameObject, 10);

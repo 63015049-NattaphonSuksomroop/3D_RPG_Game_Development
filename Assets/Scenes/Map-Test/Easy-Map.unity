@@ -540,7 +540,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &403717167
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2327,6 +2327,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2945199469356495487, guid: 56254258a30133f45824d4df879aa2a7,
         type: 3}
+      propertyPath: die
+      value: 
+      objectReference: {fileID: 8300000, guid: 36bf0bdc1c06ebe4b802246da296e106, type: 3}
+    - target: {fileID: 2945199469356495487, guid: 56254258a30133f45824d4df879aa2a7,
+        type: 3}
       propertyPath: slider
       value: 
       objectReference: {fileID: 2077255116}
@@ -2334,6 +2339,11 @@ PrefabInstance:
         type: 3}
       propertyPath: isAlive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2945199469356495487, guid: 56254258a30133f45824d4df879aa2a7,
+        type: 3}
+      propertyPath: HealthPlayer
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7361529852951546664, guid: 56254258a30133f45824d4df879aa2a7,
         type: 3}

@@ -82,7 +82,6 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
 		private int _animIDFreeFall;
 		private int _animIDMotionSpeed;
 
-		private Animator _animator;
 		private CharacterController _controller;
 		private StarterAssetsInputs _input;
 		private GameObject _mainCamera;

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
 {
-    public class Enemy : MonoBehaviour
+    public class Enemy : IsAlive
     {
         Transform target;
         NavMeshAgent nav;
@@ -21,6 +21,7 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
         public Transform Key;
         public GameObject Enemy_Skeleton;
         public GameObject Enemy_Dragon;
+        
         bool isKill = false;
 
 
@@ -141,9 +142,11 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
 
                 
                 manager.getExp();
+                
                 //transform.gameObject.GetComponent<CurrentXp>();
                 StartCoroutine(removeEnemy());
                 Debug.Log("Kill Enemy");
+
             }
             else
             {

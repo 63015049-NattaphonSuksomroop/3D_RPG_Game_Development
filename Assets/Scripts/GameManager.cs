@@ -19,8 +19,6 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
         [SerializeReference] public float TargetXp;
         [SerializeReference] public Image XpProgresBar;
 
-
-
         public GameManager()
         {
             CurrentXp = 0;
@@ -63,6 +61,7 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
         }
         public float getExp()
         {
+            
             CurrentXp += 2000;
             return CurrentXp;
         }

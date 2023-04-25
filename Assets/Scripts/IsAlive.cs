@@ -7,7 +7,7 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
 {
     public class IsAlive : MonoBehaviour
     {
-        public int HealthP = 100;
+        
         public bool isAlivee = true;
         public Slider slider;
         public AudioSource audioSource;
@@ -23,14 +23,7 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
         // Update is called once per frame
         void Update()
         {
-            if (HealthP <= 0 && isAlivee)
-            {
-                HealthP = 0;
-                isAlivee = false;
-                audioSource.PlayOneShot(die);
-                _animator.SetTrigger("IsDeath");
-                Debug.Log(isAlivee + "PlayerIsDeath");
-            }
+
         }
     }
 }

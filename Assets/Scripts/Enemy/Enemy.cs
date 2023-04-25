@@ -139,8 +139,6 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
                 animator.SetTrigger("die");
                 manager.killEnemy();
                 manager.ExpLv();
-
-                
                 manager.getExp();
                 
                 //transform.gameObject.GetComponent<CurrentXp>();

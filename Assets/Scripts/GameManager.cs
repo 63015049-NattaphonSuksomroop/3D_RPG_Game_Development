@@ -39,12 +39,13 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
         public void killEnemy()
         {
             score += 1;
-            if (score >= PlayerPrefs.GetInt(""))
-            {
-
-            }
             Debug.Log("Score = " + score);
-
+            /*
+            if (score >= PlayerPrefs.GetInt("Hightscore", 0))
+            {
+                PlayerPrefs.SetInt("Hightscore", score);
+            }
+            */
         }
 
         public void show()

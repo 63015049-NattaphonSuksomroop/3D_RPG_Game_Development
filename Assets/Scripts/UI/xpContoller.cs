@@ -34,6 +34,7 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
                 CurrentXp = CurrentXp - TargetXp;
                 Level++;
                 TargetXp += 2000;
+                Debug.Log("Level UP"+ Level );
             }
             ExperienceText.text = CurrentXp + "/" + TargetXp;
         }

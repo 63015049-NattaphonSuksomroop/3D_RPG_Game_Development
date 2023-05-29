@@ -10,8 +10,8 @@ Wellcome to Project
 ชื่อกลุ่ม : อาเนียชอบกินถั่ว</p>
 
 ## ⚔ Game Development
-| <p align="center">SW_Dev | <p align="center">SW_Dev |
-| :-------------:  | :-------------: |
+| <p align="center">SW_Dev |
+| :-------------:  |
 | <p align="center"><img width="30%" height="40%" src="./File/Picture/Profile-63015049.png" /> |
 | <p align="center" width="100%">ID : 63015049 |
 | <p align="center" width="100%">Nattaphon Suksomroop |

@@ -13,8 +13,8 @@ Wellcome to Project
 | <p align="center">SW_Dev | <p align="center">SW_Dev |
 | :-------------:  | :-------------: |
 | <p align="center"><img width="30%" height="40%" src="./File/Picture/Profile-63015049.png" /> | <p align="center"><img width="30%" height="40%" src="./File/Picture/Profile-63015098.png" /> |
-| <p align="center" width="100%">ID : 63015049 | <p align="center" width="100%">ID : 63015098 |
-| <p align="center" width="100%">Nattaphon Suksomroop | <p align="center" width="100%">Nanthikan Praesirirak |
+| <p align="center" width="100%">ID : 63015049 |
+| <p align="center" width="100%">Nattaphon Suksomroop |
 ---
 - เอกสาร[https://docs.google.com/document/d/1QC3VqQCS4XFDi0OYOAwR1J87G8xxO-0JRleiyLpQoGo/edit]  
 ## Use case

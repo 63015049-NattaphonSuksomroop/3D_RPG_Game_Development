@@ -347,7 +347,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 100
+  m_MaxValue: 1
   m_WholeNumbers: 1
   m_Value: 1
   m_OnValueChanged:
@@ -1293,7 +1293,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6379868790406189917}
-  m_LocalRotation: {x: -0, y: -0.9935761, z: -0, w: -0.11316618}
+  m_LocalRotation: {x: -0, y: -0.9935759, z: 0, w: -0.11316843}
   m_LocalPosition: {x: 6.4248, y: 0.0020662, z: 10.647}
   m_LocalScale: {x: 1.7352, y: 1.7495323, z: 1.7279689}
   m_ConstrainProportionsScale: 0
@@ -1393,7 +1393,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 1.5
+  m_StoppingDistance: 2
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -1413,9 +1413,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8a390980cb126740828e1267b433cf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 100
+  isAlivee: 1
+  slider: {fileID: 0}
+  audioSource: {fileID: 0}
+  hit: {fileID: 0}
+  die: {fileID: 0}
+  HpText: {fileID: 0}
+  _animator: {fileID: 0}
+  HP: 1
+  CurrentXp: 0
   healthBar: {fileID: 3145823484333391756}
   animator: {fileID: 24913583326448692}
+  Player: {fileID: 0}
+  Key: {fileID: 0}
   Enemy_Skeleton: {fileID: 6379868790406189917}
   Enemy_Dragon: {fileID: 0}
 --- !u!1 &6556627425489731565
@@ -1489,7 +1499,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7179676289540402136}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.6, z: 0.1}

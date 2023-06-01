@@ -30,7 +30,7 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
             }*/
 
             Destroy(gameObject, 1);
-
+            Debug.Log(damageAmount + "damageAmount");
         }
     }
 

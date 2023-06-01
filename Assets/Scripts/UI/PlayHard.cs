@@ -7,6 +7,10 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
 {
     public class PlayHard : MonoBehaviour
     {
+        public void Start()
+        {
+            PlayScene();
+        }
         public void PlayGamemode()
         {
             SceneManager.LoadScene("Hard-Map");
@@ -19,6 +23,10 @@ namespace RPGGameDevelopment.KMITL.CE.ProjectFourth
                 Debug.Log("Quit");
 
             }
+        }
+        public void PlayScene()
+        {
+            
         }
     }
 }

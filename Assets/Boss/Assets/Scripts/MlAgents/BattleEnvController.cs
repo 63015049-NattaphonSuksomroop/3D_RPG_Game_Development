@@ -14,7 +14,7 @@ public class BattleEnvController : MonoBehaviour
     [System.Serializable]
     public class PlayerInfo
     {
-        public AgentDrArm Agent;
+        public Agents Agent;
         [HideInInspector]
         public Vector3 StartingPos;
         [HideInInspector]
@@ -201,7 +201,7 @@ public class BattleEnvController : MonoBehaviour
 
     }
 
-    public void configureAgent(BattleMode mode, AgentDrArm agent, InferenceDevice inferenceDevice = InferenceDevice.Default)
+    public void configureAgent(BattleMode mode, Agents agent, InferenceDevice inferenceDevice = InferenceDevice.Default)
     {
         agent.enableBattle = mode != BattleMode.Pause;
         agent._mode = mode;

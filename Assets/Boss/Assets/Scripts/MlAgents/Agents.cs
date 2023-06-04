@@ -14,7 +14,7 @@ public enum Team
     NPC = 1
 }
 
-public class AgentDrArm : Agent
+public class Agents : Agent
 {
     [SerializeField] bool _isPlayer;
 
